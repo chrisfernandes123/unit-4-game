@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Unit 4 Game - Crystal Collector</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+
+</head>
+
+<body>
+
+  <!-- Jumbotron for Title -->
+  <div class="jumbotron">
+    <h1 class="text-center">Crystal Collector</h1>
+
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card">
+          <div class="instructions">
+
+            There are 4 crystals below. By clicking on a crystal, you will add a specific amount of points to your
+            total score. The value of each crystal is hidden from you until you click on it.
+            <br> Each time when the game starts, the game will change the values of each crystal.
+            <br> You win the game by matching your total score to the automatically generated number. You lose the game
+            if your score goes above the random number.
+            <br> There will always be at least 1 odd number to ensure a possible win scenario. Click the Start Game
+            button to begin. Good luck!
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!--End of jumbotron-->
+
+    <div class="row">
+
+      <!-- Random Number Card -->
+      <div class="col-lg-3">
+        <div class="card">
+          Number:
+          <div class="random-number">
+            <h1>0</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Score Card -->
+      <div class="col-lg-3">
+        <div class="card">
+          Score:
+          <div class="score">
+            <h1>0</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Wins Card -->
+      <div class="col-lg-3">
+        <div class="card">
+          Wins:
+          <div class="results-win">
+            <h1>0</h1>
+          </div>
+        </div>
+      </div>
+      <!-- Losses Card -->
+      <div class="col-lg-3">
+        <div class="card">
+          Losses:
+          <div class="results-losses">
+            <h1>0</h1>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--end row-->
+
+
+    <div class="row">
+      <!-- Crystals Card -->
+      <div class="col-lg-12">
+        <div class="card">
+
+          <div class="card-body text-center">
+
+            <input type="image" id="button-1" class="button-crystal" value="" src="./assets/images/red.jpg" />
+
+            <input type="image" id="button-2" class="button-crystal" value="" src="./assets/images/yellow.jpg" />
+
+            <input type="image" id="button-3" class="button-crystal" value="" src="./assets/images/green.jpg" />
+
+            <input type="image" id="button-4" class="button-crystal" value="" src="./assets/images/blue.jpg" />
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end row-->
+
+    <div class="row">
+      <div class="col-lg-4">
+
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card">
+          <button id="button-start" class="btn btn-success start" value="start">
+            <h1>Start Game</h1>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--end row-->
+
+
+  </div>
+  <!--container-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
